@@ -1,7 +1,7 @@
 --this program will interpret the codon language
 local stuff = {...}
 local program = table.remove(stuff,1)
-local parser = dofile("codonparser.lua")
+local parser = dofile("parser.lua")
 local prg = io.open(program,"r")
 local prog = prg:read("*a")
 prg:close()
